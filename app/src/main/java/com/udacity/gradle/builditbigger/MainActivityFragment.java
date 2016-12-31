@@ -41,9 +41,9 @@ public class MainActivityFragment extends Fragment {
     }
 
     @OnClick(R.id.tellJoke_btn)
-    public void  displayToast(){
-        EndPointsAsyncTask endpointsAsyncTask = new EndPointsAsyncTask(getActivity());
-        endpointsAsyncTask.execute();
+    public void  DisplayActivity(){
+        EndPointsCaller EndPointsCaller = new EndPointsCaller(getActivity());
+        EndPointsCaller.execute();
     }
 
 }

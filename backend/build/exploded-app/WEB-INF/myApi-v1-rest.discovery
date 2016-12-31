@@ -1,6 +1,6 @@
 {
  "kind": "discovery#restDescription",
- "etag": "\"ODRTh3xaRR64wpeXJSlF33HMN-0/gaFwY6e6lwyDyYUIpqgG2qbqezs\"",
+ "etag": "\"ODRTh3xaRR64wpeXJSlF33HMN-0/10pd-8wbyZUUAc_8IVPeU4pbf6w\"",
  "discoveryVersion": "v1",
  "id": "myApi:v1",
  "name": "myApi",
@@ -13,9 +13,9 @@
   "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
  },
  "protocol": "rest",
- "baseUrl": "https://builditbigger-154114.appspot.com/_ah/api/myApi/v1/",
+ "baseUrl": "https://buildbig-154116.appspot.com/_ah/api/myApi/v1/",
  "basePath": "/_ah/api/myApi/v1/",
- "rootUrl": "https://builditbigger-154114.appspot.com/_ah/api/",
+ "rootUrl": "https://buildbig-154116.appspot.com/_ah/api/",
  "servicePath": "myApi/v1/",
  "batchPath": "batch",
  "parameters": {
