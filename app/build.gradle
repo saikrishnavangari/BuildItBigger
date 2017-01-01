@@ -6,6 +6,7 @@ android {
     buildToolsVersion "24.0.3"
 
     defaultConfig {
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         applicationId "com.udacity.gradle.builditbigger"
         minSdkVersion 16
         targetSdkVersion 24
@@ -19,6 +20,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    productFlavors {
+        free {
+            applicationId "com.udacity.gradle.builditbigger.free"
+        }
+        paid {
+            applicationId "com.udacity.gradle.builditbigger"
+        }
+    }
 }
 
 dependencies {
@@ -26,10 +35,12 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-
+    androidTestCompile('com.android.support.test:runner:0.4', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
     compile project(':jokedisplay')
     compile 'com.android.support:appcompat-v7:24.1.0'
-    compile 'com.google.android.gms:play-services-ads:10.0.1'
+    freeCompile 'com.google.android.gms:play-services-ads:10.0.1'
     compile 'com.jakewharton:butterknife:8.4.0'
     compile 'com.google.code.findbugs:jsr305:2.0.1'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
